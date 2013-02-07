@@ -24,5 +24,7 @@ from source from [julialang.org](http://julialang.org).
 
 # License
 Creative Commons Attribution-NonCommerical 3.0 Unported
+
 ![](http://i.creativecommons.org/l/by-nc/3.0/88x31.png)
+
 [Creative Commons Attribution-NonCommercial 3.0 Unported Licencse](http://creativecommons.org/licenses/by-nc/3.0/deed.en_US)
