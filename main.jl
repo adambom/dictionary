@@ -16,12 +16,14 @@ dictionary = Dict()
 word = false
 defining  = false
 defn = ""
+words = {}
 
 for line in lines
     if isheader(line)
         if !has(dictionary, line)
             # start looking for definition
             word = line
+            push!(words, word)
         end
         continue
     end
@@ -50,7 +52,13 @@ for line in lines
     end
 end
 
+io = open("dictionary.json", "w+")
+JSON.print(io, dictionary)
+
+close(io)
+
 nodes = unique(keys(dictionary))
+
 graph = Dict()
 
 # Build a graph representation
@@ -69,5 +77,5 @@ for node in nodes
 end
 
 io = open("graph.json", "w+")
-print_to_json(io, graph)
+JSON.print(io, graph)
 close(io)
