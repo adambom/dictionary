@@ -23,8 +23,10 @@ which is and IDE for Julia. It comes with the binaries pre-installed. You can al
 from source from [julialang.org](http://julialang.org).
 
 # License
-Creative Commons Attribution-NonCommerical 3.0 Unported
+The works in this repository are licensed under the MIT License, with the exception of the contents of dictionary.txt, which are licensed under the terms of the Project Gutenberg License:
 
-![](http://i.creativecommons.org/l/by-nc/3.0/88x31.png)
-
-[Creative Commons Attribution-NonCommercial 3.0 Unported Licencse](http://creativecommons.org/licenses/by-nc/3.0/deed.en_US)
+From Project Gutenberg:
+> This eBook is for the use of anyone anywhere at no cost and with
+> almost no restrictions whatsoever.  You may copy it, give it away or
+> re-use it under the terms of the Project Gutenberg License included
+> with this eBook or online at www.gutenberg.net
