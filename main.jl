@@ -20,7 +20,7 @@ words = {}
 
 for line in lines
     if isheader(line)
-        if !has(dictionary, line)
+        if !haskey(dictionary, line)
             # start looking for definition
             word = line
             push!(words, word)
