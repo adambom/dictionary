@@ -13,7 +13,7 @@ end
 # Array functions
 function difference(a::Array, rest...)
     rest = vcat(rest...)
-    filter((value) -> !contains(rest, value), a)
+    filter((value) -> !in(value, rest), a)
 end
 
 without(a::Array, values...) = difference(a, values...)

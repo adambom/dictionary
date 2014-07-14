@@ -20,7 +20,7 @@ words = {}
 
 for line in lines
     if isheader(line)
-        if !has(dictionary, line)
+        if !haskey(dictionary, line)
             # start looking for definition
             word = line
             push!(words, word)
@@ -33,7 +33,8 @@ for line in lines
         if word != false
             # begin reading definition
             defining = true
-            defn = strcat(defn, replace(line, "Defn: ", ""))
+            replaced = replace(line, "Defn: ", "")
+            defn = "$defn$replaced"
         end
         continue
     end
@@ -47,7 +48,7 @@ for line in lines
                 continue
             end
 
-            defn = strcat(defn, line)
+            defn = "$defn $line"
         end
     end
 end
