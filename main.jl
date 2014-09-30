@@ -1,5 +1,4 @@
 using JSON
-using Debug
 using _
 
 io = open("dictionary.txt")
@@ -24,7 +23,6 @@ function parse()
     numLines = length(lines)
     for lineNum = 1:numLines
         line = lines[lineNum]
-
         if isheader(line)
             if defining
                 dictionary[word] = defn
@@ -68,7 +66,7 @@ function parse()
         if defining
             if word != false
                 if line == ""
-                    if !isnumdefn(lines[lineNum + 1])
+                    if !isnumdefn(lines[lineNum + 1]) || !isdefn(lines[lineNum + 1])
                         dictionary[word] = defn
                         # println(string("Setting ", word, " as ", defn))
                         defining = false
