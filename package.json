@@ -1,0 +1,10 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "main": "sort.js",
+  "repository": "https://github.com/wesleylhandy/dictionary.git",
+  "author": "Wesley Handy <wesleylhandy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
