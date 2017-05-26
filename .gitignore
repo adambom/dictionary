@@ -18,3 +18,5 @@ moc_*.cpp
 qrc_*.cpp
 Makefile
 *-build-*
+
+/node_modules
