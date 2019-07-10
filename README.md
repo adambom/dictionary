@@ -19,7 +19,7 @@ words that define it
 
 # How to run
 If you want to run the code yourself, I would recommend downloading [Julia Studio](http://forio.com/julia),
-which is and IDE for Julia. It comes with the binaries pre-installed. You can also get the binaries or build
+which is an IDE for Julia. It comes with the binaries pre-installed. You can also get the binaries or build
 from source from [julialang.org](http://julialang.org).
 
 # License
